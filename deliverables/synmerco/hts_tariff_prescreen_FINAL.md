@@ -4,6 +4,14 @@ This worksheet is a classification pre-screen only; it is not a binding ruling a
 
 Source for every value below: the USITC Harmonized Tariff Schedule, queried through its public REST search (no key) on 2026-10-23 (UTC); each query URL, retrieval time and raw excerpt is in the SOURCES section at the end. Rates and footnotes print on the 8-digit line and the unit of quantity on the 10-digit statistical line; where a line carries the 00 statistical suffix together with the rate and the unit, that line serves as both the 8-digit and the 10-digit line, and this is stated where it occurs.
 
+## REVISION 1 — RESPONSE TO THE EVALUATOR (submitted 2026-10-28)
+
+This revision answers the evaluator's revision 1 of 3, requested 2026-10-23 17:29:03 UTC. Both unmet items concern the same line, product 10's alternative code 7318.15.40.00, and both are addressed by the complete verbatim excerpt now in the SOURCES section under Query: keyword=7318.15 (re-queried 2026-10-28T08:23:35Z, same URL: https://hts.usitc.gov/reststop/search?keyword=7318.15). The 2026-10-23 excerpt for this line was truncated: it began partway through the object, at the footnotes, so the description field was missing. The complete object below replaces it in full; no other product, code or excerpt in this file was changed.
+
+1) Acceptance 2 — for every cited code, the 10-digit description and unit and the 8-digit parent description, general rate and special rate text (or blank) appear in excerpts: for 7318.15.40.00 the complete excerpt now shows, in one object, "description": "Machine screws <il>9.5 mm</il> or more in length and <il>3.2 mm</il> or more in diameter (not including cap screws)", "units": ["kg"], "general": "Free", "special": "" (blank). The 8-digit parent is the same line: the live query response (33 rows) contains no separate 7318.15.40 row — the line carries statistical suffix 00 together with the rate and the unit, so, as stated in product 10's CODES section and in the introduction, it serves as both the 8-digit and the 10-digit line, and its description, rate and unit are the parent's description, rate and unit.
+
+2) Product 10 — for every cited code, the 10-digit description and unit and the 8-digit description and rates appear in excerpts: the primary (7318.15.80.85 / 7318.15.80) was already fully excerpted and is unchanged. The alternative 7318.15.40.00 is now fully excerpted as above, so its 10-digit description no longer rests only on the CODES and REASONING text: the description text appears verbatim inside the excerpt itself.
+
 ## 1. Stainless steel vacuum-insulated water bottle, 750 ml, screw lid
 
 ### CODES
@@ -1297,6 +1305,7 @@ Source name for all queries: USITC Harmonized Tariff Schedule — public REST se
 ### Query: keyword=7318.15
 - Query URL: https://hts.usitc.gov/reststop/search?keyword=7318.15
 - Retrieved (UTC): 2026-10-23T17:01:38Z
+- Revision 1 re-query (UTC): 2026-10-28T08:23:35Z — same URL; the complete 7318.15.40.00 object in this section replaces the truncated 2026-10-23 block for that line.
 
 ```json
   {
@@ -1355,6 +1364,11 @@ Source name for all queries: USITC Harmonized Tariff Schedule — public REST se
 ```
 
 ```json
+  {
+    "additionalDuties": null,
+    "description": "Machine screws <il>9.5 mm</il> or more in length and <il>3.2 mm</il> or more in diameter (not including cap screws)",
+    "effectivePeriod": null,
+    "footnotes": [
       {
         "columns": [
           "other"
@@ -1384,7 +1398,7 @@ Source name for all queries: USITC Harmonized Tariff Schedule — public REST se
     "units": [
       "kg"
     ]
-  },
+  }
 ```
 
 ```json
