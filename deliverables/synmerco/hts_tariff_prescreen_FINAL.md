@@ -12,6 +12,18 @@ This revision answers the evaluator's revision 1 of 3, requested 2026-10-23 17:2
 
 2) Product 10 — for every cited code, the 10-digit description and unit and the 8-digit description and rates appear in excerpts: the primary (7318.15.80.85 / 7318.15.80) was already fully excerpted and is unchanged. The alternative 7318.15.40.00 is now fully excerpted as above, so its 10-digit description no longer rests only on the CODES and REASONING text: the description text appears verbatim inside the excerpt itself.
 
+## REVISION 2 — RESPONSE TO THE EVALUATOR (prepared 2026-10-31, NOT yet published or resubmitted)
+
+This revision answers the evaluator's revision 2 of 3, requested 2026-10-30 07:34:51 UTC. It fixes only the 4 unmet items, all about the same line, product 10's alternative code 7318.15.40.00. The 11 items the evaluator listed as ALREADY MET are unchanged — no other product, code, excerpt or section in this file was touched.
+
+1) Acceptance 2 — for every cited code, the 10-digit description and unit and the 8-digit parent description, general rate and special rate text (or blank) appear in excerpts: for 7318.15.40.00 the values now appear in the two consecutive excerpts under Query: keyword=7318.15 below — Excerpt 1 of 2 holds "description": "Machine screws <il>9.5 mm</il> or more in length and <il>3.2 mm</il> or more in diameter (not including cap screws)" and "general": "Free"; Excerpt 2 of 2 holds "htsno": "7318.15.40.00", "special": "" (blank) and "units": ["kg"]. The 8-digit parent is the same line (no separate 7318.15.40 row in the 33-row response; statistical suffix 00 with rate and unit), as stated in product 10's CODES section and in the introduction.
+
+2) Product 10 — for every cited code, the 10-digit description and unit and the 8-digit description and rates appear in excerpts: the primary (7318.15.80.85 / 7318.15.80) is unchanged and still fully excerpted. The alternative 7318.15.40.00 is now excerpted as two consecutive blocks instead of one 35-line block: Excerpt 1 of 2 is lines 1–20 of the object (pretty-printed response lines 345–364), Excerpt 2 of 2 is lines 21–35 (pretty-printed response lines 365–379), together the complete object, copied exactly as returned — including the trailing comma on the closing line ("  },"). The query was re-run at 2026-10-31T06:21:43Z (same URL: https://hts.usitc.gov/reststop/search?keyword=7318.15, 33 rows, values unchanged). Note on the 7318.15.80.85 block the reviewer mentioned: verified in the same live response that 7318.15.80.85 is the 33rd and last row, so its closing line correctly has no trailing comma; that block was not changed.
+
+3) Excerpt is 10–30 consecutive lines of the pretty-printed text (never longer ones): the 35-line block is gone. The two replacement excerpts are 20 lines and 15 lines. No other excerpt block in this file exceeds 30 lines (all others are 24–27 lines, as the reviewer counted).
+
+4) An excerpt is 10–30 consecutive lines of that text (never longer ones): same fix as (3) — the 7318.15.40.00 object is now two consecutive code blocks under the same query, each 10–30 lines, copied exactly from the pretty-printed response, with the description, units, general and special lines inside them.
+
 ## 1. Stainless steel vacuum-insulated water bottle, 750 ml, screw lid
 
 ### CODES
@@ -1306,6 +1318,7 @@ Source name for all queries: USITC Harmonized Tariff Schedule — public REST se
 - Query URL: https://hts.usitc.gov/reststop/search?keyword=7318.15
 - Retrieved (UTC): 2026-10-23T17:01:38Z
 - Revision 1 re-query (UTC): 2026-10-28T08:23:35Z — same URL; the complete 7318.15.40.00 object in this section replaces the truncated 2026-10-23 block for that line.
+- Revision 2 re-query (UTC): 2026-10-31T06:21:43Z — same URL, 33 rows, values unchanged from 2026-10-28; the 35-line object is now split into two consecutive excerpts below (20 + 15 lines, each 10–30 lines), copied exactly as returned including the trailing comma on the closing line.
 
 ```json
   {
@@ -1363,6 +1376,8 @@ Source name for all queries: USITC Harmonized Tariff Schedule — public REST se
   },
 ```
 
+Excerpt 1 of 2 — lines 1–20 of the 35-line object (pretty-printed response lines 345–364):
+
 ```json
   {
     "additionalDuties": null,
@@ -1384,6 +1399,11 @@ Source name for all queries: USITC Harmonized Tariff Schedule — public REST se
     "highlightStatSuffix": null,
     "htmlStatNote": null,
     "htscode": null,
+```
+
+Excerpt 2 of 2 — lines 21–35 of the same object, consecutive with Excerpt 1 (pretty-printed response lines 365–379; note the trailing comma on the closing line, exactly as returned):
+
+```json
     "htsno": "7318.15.40.00",
     "indent": "3",
     "other": "2.2\u00a2/kg",
@@ -1398,7 +1418,7 @@ Source name for all queries: USITC Harmonized Tariff Schedule — public REST se
     "units": [
       "kg"
     ]
-  }
+  },
 ```
 
 ```json
